@@ -25,25 +25,25 @@
                 </ComboBox>
             </ToolBar>
             <ToolBar Margin="5" Padding="5">
-                <Button>
+                <Button Click="Button_Click">
                     <Image Source="Data\cursiv1.png"/>
                 </Button>
                 <Separator/>
-                <Button>
+                <Button Click="Button_Click_1">
                     <Image Source="Data\jirnyi1.png"/>
                 </Button>
                 <Separator/>
-                <Button>
+                <Button Click="Button_Click_2">
                     <Image Source="Data\underline1.png"/>
                 </Button>
             </ToolBar>
             <ToolBar Margin="5" Padding="5">
                 <StackPanel VerticalAlignment="Center">
-                    <RadioButton Content="Черный" IsChecked="True"/>
-                    <RadioButton Content="Красный"/>
+                    <RadioButton Content="Черный" IsChecked="True" Checked="RadioButton_Checked"/>
+                    <RadioButton Content="Красный" IsChecked="False" Checked="RadioButton_Checked_1" Foreground="Black"/>
                 </StackPanel>
             </ToolBar>
         </ToolBarTray>
-        <TextBox x:Name="textBox" Grid.Row="1" Margin="5" Padding="5" FontSize="14" FontFamily="Arial" TextWrapping="Wrap"/>
+        <TextBox x:Name="textBox" Grid.Row="1" Margin="5" Padding="5" FontSize="14" FontFamily="Arial" TextWrapping="Wrap" TextDecorations="{x:Null}" Foreground="Black"  />
     </Grid>
 </Window>
